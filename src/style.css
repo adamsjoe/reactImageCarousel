@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  background: #ecf0f3 !important;
+}
+
+H2,
+.slide {
+  text-align: center;
+  font-size: 50px;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider .arrow {
+  position: absolute;
+  top: 150px;
+}
+
+.arrow {
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.arrow:hover {
+  color: #ff0000;
+}
+
+.arrowLeft {
+  left: 0;
+}
+
+.arrowRight {
+  right: 0;
+}
