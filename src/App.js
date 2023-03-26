@@ -11,12 +11,8 @@ const images = [
   "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
 ];
 
-const nextArrow = (
-  <FontAwesomeIcon icon={faForward} size="3x" className="arrow arrowRight" />
-);
-const prevArrow = (
-  <FontAwesomeIcon icon={faBackward} size="3x" className="arrow arrowLeft" />
-);
+const nextArrow = <FontAwesomeIcon icon={faForward} size="3x" />;
+const prevArrow = <FontAwesomeIcon icon={faBackward} size="3x" />;
 
 export default function App() {
   const [current, setCurrent] = useState(0);
@@ -33,10 +29,10 @@ export default function App() {
     <div>
       <h2>Carousel</h2>
       <div className="slider">
-        <div className="leftArrow" onClick={previousSlide}>
+        <div className="left-arrow" onClick={previousSlide}>
           {prevArrow}
         </div>
-        <div className="rightArrow" onClick={nextSlide}>
+        <div className="right-arrow" onClick={nextSlide}>
           {nextArrow}
         </div>
         {images.map(
